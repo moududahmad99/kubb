@@ -18,7 +18,13 @@ a {
   display: inline-block;
 }
 
-h1,h2,h3,h4,h5,h6,p {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
   line-height: 0.8;
   margin: 0;
 }
@@ -27,10 +33,10 @@ h1,h2,h3,h4,h5,h6,p {
   --primary-color: #111111;
   --seconday-color: #686868;
   --tertiary-color: #ffffff;
-  --quaternary-color: #fec600;
+  --quaternary-color: ##8b8d8;
   --quinary-color: #e4e4e4;
-  --primary-font: 'Open Sans', sans-serif;
-  --secondary-font: 'Raleway', sans-serif;
+  --primary-font: "Open Sans", sans-serif;
+  --secondary-font: "Raleway", sans-serif;
   --regular-font-weight: 400;
   --medium-font-weight: 500;
   --semibold-font-weight: 600;
@@ -39,9 +45,82 @@ h1,h2,h3,h4,h5,h6,p {
 /* Common CSS End */
 
 /* Navbar Area Start */
+.navbar {
+  background: #11111179;
+  font-family: var(--secondary-font);
+  position: absolute;
+  width: 100%;
+}
+
+.nav-link {
+  padding: 40px 0;
+  position: relative;
+}
+
+.nav-link::after {
+  position: absolute;
+  content: '';
+  height: 2px;
+  width: 100%;
+  left: 0;
+  bottom: -8%;
+  background-color: #28b8d8;
+  transition: .6s;
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  -moz-transform: scale(0);
+  -ms-transform: scale(0);
+  -o-transform: scale(0);
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -ms-transition: .6s;
+  -o-transition: .6s;
+}
+
+.nav-link:hover::after {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  -moz-transform: scale(1);
+  -ms-transform: scale(1);
+  -o-transform: scale(1);
+}
+
+.nav-link {
+  color: #fff;
+  font-size: 18px;
+}
+
+.nav-link:hover {
+  color: var(--quaternary-color);
+}
 /* Navbar Area End */
 
 /* Banner Area Start */
+#banner {
+  background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.5)),
+    url(../images/banner.jpg) no-repeat center / cover;
+  padding:  330px 0 250px 0;
+}
+
+.banner-text h3{
+  font-size: 50px;
+  line-height: 52px;
+  color: var(--tertiary-color);
+  font-family: var(--primary-font);
+  font-weight: var(--regular-font-weight);
+  padding: 0 50px;
+}
+
+.banner-text h3 span {
+  color: #28b8d8;
+}
+
+.banner-text p {
+  font-size: 14px;
+  line-height: 42px;
+  color: var(--tertiary-color);
+  font-family: var(--secondary-font);
+}
 /* Banner Area End */
 
 /* About Area Start */
@@ -70,82 +149,3 @@ h1,h2,h3,h4,h5,h6,p {
 
 /* Footer Area Start */
 /* Footer Area End */
-
-
-
-/* Slick Slider Area Start */
-
-
-.slick-arrow1 {
-  position: absolute;
-  top: 50%;
-  left: 5%;
-  color: rgba(0, 0, 0, 0.863);
-  font-size: 30px;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  cursor: pointer;
-  font-size: 20px;
-  z-index: 1;
-}
-
-.slick-arrow1::after {
-  position: absolute;
-  content: '';
-  top: -6px;
-  left: -6px;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  z-index: -1;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-} 
-
-.slick-arrow1:hover::after {
-  background-color: #fec600;
-}
-
-.slick-arrow2 {
-  position: absolute;
-  top: 50%;
-  right: 5%;
-  color: rgba(0, 0, 0, 0.863);
-  font-size: 30px;
-  transform: translate(-50%);
-  -webkit-transform: translate(-50%);
-  -moz-transform: translate(-50%);
-  -ms-transform: translate(-50%);
-  -o-transform: translate(-50%);
-  cursor: pointer;
-  z-index: 1;
-  font-size: 20px;
-}
-
-.slick-arrow2::after {
-  position: absolute;
-  content: '';
-  top: -6px;
-  left: -6px;
-  width: 30px;
-  height: 30px;
-  background-color: #ffffff;
-  z-index: -1;
-  border-radius: 50%;
-  -webkit-border-radius: 50%;
-  -moz-border-radius: 50%;
-  -ms-border-radius: 50%;
-  -o-border-radius: 50%;
-}
-
-.slick-arrow2:hover::after {
-  background-color: #fec600;
-}
-
-/* Slick Slider Area End */
