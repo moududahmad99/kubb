@@ -30,8 +30,8 @@ p {
 }
 
 :root {
-  --primary-color: #111111;
-  --seconday-color: #686868;
+  --primary-color: #444444;
+  --secondary-color: #686868;
   --tertiary-color: #ffffff;
   --quaternary-color: #28b8d8;
   --quinary-color: #e4e4e4;
@@ -140,15 +140,15 @@ p {
 .service-desc p {
   font-size: 14px;
   line-height: 50px;
-  font-family: var(--seconday-color);
-  color: var(--seconday-color);
+  font-family: var(--secondary-color);
+  color: var(--secondary-color);
 }
 
 .service-desc h2 {
-  font-family: var(--seconday-color);
+  font-family: var(--secondary-color);
   font-size: 22px;
   font-weight: 22px;
-  color: var(--primary-color-color);
+  color: var(--primary-color);
   text-transform: capitalize;
   margin: 70px 0 44px 0;
 }
@@ -187,7 +187,7 @@ p {
   line-height: 20px;
   font-family: var(--primary-font);
   padding: 0 30px;
-  color: var(--seconday-color)
+  color: var(--secondary-color)
   ;
 }
 
@@ -255,7 +255,90 @@ p {
 /* Gallery Area End */
 
 /* Journal Area Start */
+#journal {
+  padding: 70px 0;
+  background: #f9f9f9;
+}
 
+.journal-title h3{
+  color: var(--primary-color);
+}
+
+.journal-card {
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  padding: 30px 0;
+  background-color: #ffffff;
+  cursor: pointer;
+}
+
+.journal-card:hover {
+  box-shadow: 1px 1px 25px 1px rgba(0, 0, 0, 0.185);
+  -webkit-box-shadow: 1px 1px 25px 1px rgba(0,0,0,0.33);
+  -moz-box-shadow: 1px 1px 25px 1px rgba(0,0,0,0.33);
+}
+
+.journal-card h3 {
+  font-size: 18px;
+  font-weight: var(--medium-font-weight);
+  line-height: 22px;
+  font-family: var(--primary-font);
+  color: var(--primary-color);
+}
+
+.journal-card img {
+  width: 100%;
+}
+
+.journal-card h5 {
+  font-size: 13px;
+  font-weight: var(--medium-font-weight);
+  line-height: 22px;
+  margin: 15px 0 25px 0;
+  color: var(--secondary-color);
+  font-family: var(--secondary-font);
+}
+
+.journal-card p {
+  font-size: 12px;
+  line-height: 22px;
+  font-family: var(--secondary-font);
+  color: var(--secondary-color);
+  font-weight: var(--medium-font-weight);
+  margin-top: 25px;
+  padding: 0 22px;
+  text-align: left;
+}
+
+.journal-card a {
+  font-size: 12px;
+  color: var(--secondary-color);
+  text-transform: uppercase;
+  position: relative;
+  margin: 20px 0;
+}
+
+.journal-card a::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 30%;
+  left: 0;
+  bottom: -8%;
+  background-color: #28b8d8;
+  transition: .6s;
+  -webkit-transition: .6s;
+  -moz-transition: .6s;
+  -ms-transition: .6s;
+  -o-transition: .6s;
+}
+
+.journal-card a:hover::after {
+width: 100%;
+}
 /* Journal Area End */
 
 /* Testimonial Area Start */
