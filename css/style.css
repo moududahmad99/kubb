@@ -194,10 +194,69 @@ p {
 /* Service Area End */
 
 /* Gallery Area Start */
+#instagram {
+  padding: 50px 0;
+  background: #2c2c2c;
+}
+
+.instagram-title h3 {
+  color: var(--quinary-color);
+}
+
+.section-title h3{
+  font-size: 18px;
+  text-transform: uppercase;
+  padding: 40px 0;
+  position: relative;
+}
+
+.section-title h3::after {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 120px;
+  background-color: #686868;
+  left: 0;
+  top: 50%;
+}
+
+.section-title h3::before {
+  position: absolute;
+  content: '';
+  height: 1px;
+  width: 120px;
+  background-color: #686868;
+  right: 0;
+  top: 50%;
+}
+
+.instagram-button {
+  padding: 40px 0;
+}
+
+.instagram-button a {
+  padding: 20px 30px;
+  border: 1px solid #e4e4e4;
+  color: var(--quinary-color);
+  text-transform: uppercase;
+  transition: .5s;
+  -webkit-transition: .5s;
+  -moz-transition: .5s;
+  -ms-transition: .5s;
+  -o-transition: .5s;
+  font-weight: var(--medium-font-weight);
+}
+
+.instagram-button a:hover {
+  background-color: #28b8d8;
+  color: var(--quinary-color);
+  border: 1px solid transparent;
+}
 /* Gallery Area End */
 
-/* Team Area Start */
-/* Team Area End */
+/* Journal Area Start */
+
+/* Journal Area End */
 
 /* Testimonial Area Start */
 /* Testimonial Area End */
